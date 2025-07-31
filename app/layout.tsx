@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   description: "Excellence in Education Since 1995",
 };
 
-import { MobileMenuProvider } from '@/components/context/MobileMenuContext';
-import Footer from '@/components/layout/Footer';
+import { MobileMenuProvider } from "@/components/context/MobileMenuContext";
+// import Footer from '@/components/layout/Footer';
 
 export default function RootLayout({
   children,
@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <MobileMenuProvider>
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </MobileMenuProvider>
       </body>
     </html>

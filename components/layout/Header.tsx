@@ -33,7 +33,7 @@ const Header = ({ className = '' }: HeaderProps) => {
       </div>
 
       {/* Main header */}
-      <div className="py-4 border-b border-blue-800">
+      <div className="py-2 border-b border-blue-800">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo and College Name */}
