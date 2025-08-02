@@ -2,25 +2,25 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="bg-secondary text-primary">
+        <footer className="bg-yellow-400 text-blue-900">
             {/* Main Footer */}
             <div className="max-w-7xl mx-auto px-6 py-8">
                 <div className="grid grid-cols-5 gap-8">
                     {/* General */}
                     <div>
-                        <h3 className="text-lg font-bold mb-4 underline text-primary">General</h3>
+                        <h3 className="text-lg font-bold mb-4 underline text-blue-700">General</h3>
                         <ul className="space-y-1 text-sm">
-                            <li><a href="/a-to-z-listing" className="hover:underline text-primary">A to Z Listing</a></li>
-                            <li><a href="/nme-ict-project" className="hover:underline text-primary">NME-ICT Project</a></li>
-                            <li><a href="/nirf" className="hover:underline text-primary">NIRF</a></li>
-                            <li><a href="/tender" className="hover:underline text-primary">Tender</a></li>
-                            <li><a href="/holidays" className="hover:underline text-primary">Holidays</a></li>
-                            <li><a href="/cec-e-content" className="hover:underline text-primary">CEC E-content</a></li>
-                            <li><a href="/journals" className="hover:underline text-primary">Journals</a></li>
-                            <li><a href="/anti-ragging" className="hover:underline text-primary">Anti Ragging</a></li>
-                            <li><a href="/fee-structure" className="hover:underline text-primary">Fee Structure</a></li>
-                            <li><a href="/pandit-madan-mohan-malviya" className="hover:underline text-primary">Pandit Madan Mohan Malviya</a></li>
-                            <li><a href="/external-proxy" className="hover:underline text-primary">External Proxy</a></li>
+                            <li><a href="/a-to-z-listing" className="hover:underline text-blue-800">A to Z Listing</a></li>
+                            <li><a href="/nme-ict-project" className="hover:underline text-blue-800">NME-ICT Project</a></li>
+                            <li><a href="/nirf" className="hover:underline text-blue-800">NIRF</a></li>
+                            <li><a href="/tender" className="hover:underline text-blue-800">Tender</a></li>
+                            <li><a href="/holidays" className="hover:underline text-blue-800">Holidays</a></li>
+                            <li><a href="/cec-e-content" className="hover:underline text-blue-800">CEC E-content</a></li>
+                            <li><a href="/journals" className="hover:underline text-blue-800">Journals</a></li>
+                            <li><a href="/anti-ragging" className="hover:underline text-blue-800">Anti Ragging</a></li>
+                            <li><a href="/fee-structure" className="hover:underline text-blue-800">Fee Structure</a></li>
+                            <li><a href="/pandit-madan-mohan-malviya" className="hover:underline text-blue-800">Pandit Madan Mohan Malviya</a></li>
+                            <li><a href="/external-proxy" className="hover:underline text-blue-800">External Proxy</a></li>
                             <li><a href="/re-accreditation-report" className="hover:underline text-blue-800">Re-accreditation Report (RAR)</a></li>
                             <li><a href="/agriculture-extension" className="hover:underline text-blue-800">Agriculture Extension Services</a></li>
                             <li><a href="/consultancy-services" className="hover:underline text-blue-800">Consultancy Services</a></li>
@@ -133,9 +133,9 @@ const Footer = () => {
             </div>
 
             {/* Bottom Footer */}
-            <div className="bg-secondary border-t border-yellow-600 py-4">
+            <div className="bg-yellow-500 border-t border-yellow-600 py-4">
                 <div className="max-w-7xl mx-auto px-6">
-                    <div className="flex flex-wrap items-center justify-between text-xs text-primary">
+                    <div className="flex flex-wrap items-center justify-between text-xs text-blue-900">
                         <div className="flex flex-wrap items-center space-x-4 mb-2 md:mb-0">
                             <a href="/copyright-policy" className="hover:underline">Copyright Policy</a>
                             <a href="/hyperlinking-policy" className="hover:underline">Hyperlinking Policy</a>
@@ -155,7 +155,7 @@ const Footer = () => {
                     <div className="flex flex-col md:flex-row justify-between items-start mt-3 text-xs text-blue-900">
                         <div className="mb-2 md:mb-0 max-w-3xl">
                             <p>This is the official Website of Banaras Hindu University, [BHU], Varanasi-221005, U.P., India. Content on this website is published and Managed by Banaras Hindu University. For any query regarding this website, Please contact the
-                                <a href="/web-information-manager" className="text-primary hover:underline ml-1">"Web Information Manager"</a>
+                                <a href="/web-information-manager" className="text-blue-700 hover:underline ml-1">"Web Information Manager"</a>
                             </p>
                         </div>
                         <div className="flex flex-col items-end text-right">
@@ -165,7 +165,7 @@ const Footer = () => {
                             </div>
                             <div>
                                 <span>Powered by :</span>
-                                <a href="#" className="text-primary hover:underline ml-1">BSN Infotech Pvt. Ltd</a>
+                                <a href="#" className="text-blue-700 hover:underline ml-1">BSN Infotech Pvt. Ltd</a>
                             </div>
                         </div>
                     </div>
