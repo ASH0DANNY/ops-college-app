@@ -229,7 +229,7 @@ const stats = [
 
 const nationalPortals = [
   { name: "NIRF", logo: "/nirf-logo.png" },
-  { name: "Swachh Bharat", logo: "/swachh-bharat-logo.png" },
+  { name: "Swachh Bharat", logo: "/public/web-logos/swachh-bharat-logo.png" },
   { name: "Digital India", logo: "/digital-india-logo.png" },
   { name: "India.gov.in", logo: "/india-gov-logo.png" },
 ];
