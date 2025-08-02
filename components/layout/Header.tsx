@@ -1,49 +1,69 @@
-'use client';
+"use client";
 
-import { HeaderProps } from '@/types/navigation';
-import { useMobileMenu } from '../context/MobileMenuContext';
-import Link from 'next/link';
-import { menuItems } from '@/data/menuItems';
+import { HeaderProps } from "@/types/navigation";
+import { useMobileMenu } from "../context/MobileMenuContext";
+import Link from "next/link";
+import { menuItems } from "@/data/menuItems";
 
-const Header = ({ className = '' }: HeaderProps) => {
+const Header = ({ className = "" }: HeaderProps) => {
   const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenu();
 
   return (
-    <header className={`bg-blue-900 text-white ${className}`}>
+    <header className={`bg-white ${className}`}>
       {/* Top bar */}
-      <div className="bg-blue-800 py-2">
+      <div className="bg-primary text-white py-2">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center text-sm">
             <div className="flex space-x-4">
-              <a href="mailto:info@college.edu" className="hover:text-blue-200">
+              <a
+                href="mailto:info@college.edu"
+                className="hover:text-secondary transition-colors"
+              >
                 <span className="mr-2">✉</span>
                 info@college.com
               </a>
-              <a href="tel:+1234567890" className="hover:text-blue-200">
+              <a
+                href="tel:+1234567890"
+                className="hover:text-secondary transition-colors"
+              >
                 <span className="mr-2">📞</span>
                 +91 1234567890
               </a>
             </div>
             <div className="flex space-x-4">
-              <a href="/student-portal" className="hover:text-blue-200">Student Portal</a>
-              <a href="/staff-portal" className="hover:text-blue-200">Staff Portal</a>
+              <a
+                href="/student-portal"
+                className="hover:text-secondary transition-colors"
+              >
+                Student Portal
+              </a>
+              <a
+                href="/staff-portal"
+                className="hover:text-secondary transition-colors"
+              >
+                Staff Portal
+              </a>
             </div>
           </div>
         </div>
       </div>
 
       {/* Main header */}
-      <div className="py-2 border-b border-blue-800">
+      <div className="py-4 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo and College Name */}
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-blue-900 text-2xl font-bold">Logo</span>
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-white text-2xl font-bold">Logo</span>
               </div>
               <div className="pr-4">
-                <h1 className="text-2xl font-bold tracking-tight">College of Education</h1>
-                <p className="text-sm text-blue-200">Excellence in Education Since 1995</p>
+                <h1 className="text-2xl font-bold tracking-tight text-primary">
+                  College of Education
+                </h1>
+                <p className="text-sm text-blue-200">
+                  Excellence in Education Since 1995
+                </p>
               </div>
             </div>
 
@@ -52,8 +72,8 @@ const Header = ({ className = '' }: HeaderProps) => {
               {menuItems.map((item) => (
                 <div key={item.id} className="relative group">
                   <Link
-                    href={item.path || '#'}
-                    className="inline-flex items-center px-4 py-3 text-sm font-semibold text-white hover:text-blue-200 hover:bg-blue-800 rounded-lg transition duration-150 ease-in-out"
+                    href={item.path || "#"}
+                    className="inline-flex items-center px-4 py-3 text-sm font-semibold text-black hover:text-blue-200 hover:bg-blue-800 rounded-lg transition duration-150 ease-in-out"
                   >
                     {item.title}
                     {item.submenu && (
@@ -78,7 +98,7 @@ const Header = ({ className = '' }: HeaderProps) => {
                         {item.submenu.map((subItem) => (
                           <Link
                             key={subItem.id}
-                            href={subItem.path || '#'}
+                            href={subItem.path || "#"}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                           >
                             {subItem.title}
@@ -135,12 +155,12 @@ const Header = ({ className = '' }: HeaderProps) => {
       </div>
 
       {/* Mobile menu */}
-      <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}>
+      <div className={`md:hidden ${mobileMenuOpen ? "block" : "hidden"}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 bg-blue-800">
           {menuItems.map((item) => (
             <div key={item.id}>
               <Link
-                href={item.path || '#'}
+                href={item.path || "#"}
                 className="block px-3 py-2 text-base font-medium text-white hover:text-blue-200 hover:bg-blue-700 rounded-md"
               >
                 {item.title}
@@ -150,7 +170,7 @@ const Header = ({ className = '' }: HeaderProps) => {
                   {item.submenu.map((subItem) => (
                     <Link
                       key={subItem.id}
-                      href={subItem.path || '#'}
+                      href={subItem.path || "#"}
                       className="block px-3 py-2 text-sm font-medium text-blue-100 hover:text-white hover:bg-blue-700 rounded-md"
                     >
                       {subItem.title}
