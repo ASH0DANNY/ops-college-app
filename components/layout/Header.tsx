@@ -1,5 +1,3 @@
-"use client";
-
 import { HeaderProps } from "@/types/navigation";
 import { useMobileMenu } from "../context/MobileMenuContext";
 import Link from "next/link";
@@ -11,7 +9,7 @@ const Header = ({ className = "" }: HeaderProps) => {
   return (
     <header className={`bg-white ${className}`}>
       {/* Top bar */}
-      <div className="bg-primary text-white py-2">
+      <div className="bg-primary text-white py-1">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center text-sm">
             <div className="flex space-x-4">
@@ -49,7 +47,7 @@ const Header = ({ className = "" }: HeaderProps) => {
       </div>
 
       {/* Main header */}
-      <div className="py-4 border-b border-gray-200">
+      <div className="py-2 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo and College Name */}

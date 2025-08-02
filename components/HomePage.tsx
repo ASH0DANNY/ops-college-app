@@ -3,6 +3,7 @@
 import Image from "next/image";
 import PageLayout from "./layout/PageLayout";
 import NewsSection from "./news/NewsSection";
+import AlertBanner from "./layout/AlertBanner";
 
 const newsItems = [
   {
@@ -237,22 +238,53 @@ const HomePage = () => {
   return (
     <PageLayout>
       <div className="min-h-screen">
+        {/* University Header */}
+        <section className="relative h-[580px]">
+          <div className="absolute inset-0 bg-black/50 z-10" />
+          <div className="relative h-full">
+            {/* Replace with your actual image */}
+            <Image
+              src="/college-banner.jpg"
+              alt="College Campus"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
+          </div>
+          <div className="absolute inset-0 z-20 flex items-center justify-center text-white">
+            <div className="text-center">
+              <h1 className="text-5xl font-bold mb-4">
+                Welcome to Our College
+              </h1>
+              <p className="text-xl mb-8">
+                Shaping Futures Through Quality Education
+              </p>
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md">
+                Apply Now
+              </button>
+            </div>
+          </div>
+        </section>
+
+        {/* Alert Banner */}
+        <AlertBanner />
+
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#2563eb] text-white py-16">
+        <section className="relative bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#2563eb] text-white py-5">
           <div className="absolute inset-0 bg-black/20" />
           <div className="relative max-w-7xl mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Banaras Hindu University
+            <h1 className="text-2xl md:text-3xl font-bold mb-6">
+              ABC Universitys
             </h1>
             <div className="w-16 h-1 bg-white mx-auto mb-8"></div>
-            <p className="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
-              Banaras Hindu University is an internationally reputed temple of
-              learning, situated in the holy city of Varanasi. This creative and
+            <p className="text-sm md:text-base max-w-4xl mx-auto leading-relaxed">
+              ABC University is an internationally reputed temple of learning,
+              situated in the holy city of Varanasi. This creative and
               innovative university was founded by the great nationalist leader,
               Pandit Madan Mohan Malaviya, in 1916, through close cooperation
               with great personalities like Dr Annie Besant, who viewed it as
               the University of India. Banaras Hindu University was established
-              by the Parliamentary legislation-B.H.U. Act 1915.
+              by the Parliamentary legislation-ABC. Act 1915.
             </p>
           </div>
         </section>

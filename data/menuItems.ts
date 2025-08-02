@@ -13,7 +13,7 @@ export const menuItems: MenuItem[] = [
       {
         id: 'about-college',
         title: 'About College',
-        path: '/about-college',
+        path: '/about',
       },
       {
         id: 'vision-mission',
