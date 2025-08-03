@@ -4,6 +4,10 @@ import Image from "next/image";
 import PageLayout from "./layout/PageLayout";
 import NewsSection from "./news/NewsSection";
 import AlertBanner from "./layout/AlertBanner";
+import nirf_logo from "@/public/web-logos/nirf-logo.png";
+import swachh_bharat_logo from "@/public/web-logos/swachh-bharat-logo.png";
+import digital_india_logo from "@/public/web-logos/digital-india-logo.png";
+import india_gov_logo from "@/public/web-logos/india-gov-logo.png";
 
 const newsItems = [
   {
@@ -228,10 +232,10 @@ const stats = [
 ];
 
 const nationalPortals = [
-  { name: "NIRF", logo: "/nirf-logo.png" },
-  { name: "Swachh Bharat", logo: "/public/web-logos/swachh-bharat-logo.png" },
-  { name: "Digital India", logo: "/digital-india-logo.png" },
-  { name: "India.gov.in", logo: "/india-gov-logo.png" },
+  { name: "NIRF", logo: nirf_logo },
+  { name: "Swachh Bharat", logo: swachh_bharat_logo },
+  { name: "Digital India", logo: digital_india_logo },
+  { name: "India.gov.in", logo: india_gov_logo },
 ];
 
 const HomePage = () => {
@@ -517,8 +521,8 @@ const HomePage = () => {
                       <Image
                         src={portal.logo || "/placeholder-logo.png"}
                         alt={portal.name}
-                        width={80}
-                        height={40}
+                        width={180}
+                        height={60}
                         objectFit="contain"
                       />
                     </div>

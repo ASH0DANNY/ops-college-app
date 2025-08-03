@@ -52,14 +52,14 @@ const Header = ({ className = "" }: HeaderProps) => {
           <div className="flex items-center justify-between">
             {/* Logo and College Name */}
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center flex-shrink-0">
                 <span className="text-white text-2xl font-bold">Logo</span>
               </div>
               <div className="pr-4">
-                <h1 className="text-2xl font-bold tracking-tight text-primary">
+                <h1 className="text-2xl font-bold tracking-tight text-black">
                   College of Education
                 </h1>
-                <p className="text-sm text-blue-200">
+                <p className="text-sm text-gray-500">
                   Excellence in Education Since 1995
                 </p>
               </div>
