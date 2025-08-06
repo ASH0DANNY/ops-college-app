@@ -1,11 +1,14 @@
 import HomePage from "@/components/HomePage";
+import { MobileMenuProvider } from "@/components/context/MobileMenuContext";
 
 export default function Home() {
   return (
-    <main>
-      {/* <Header /> */}
-      {/* <Navbar /> */}
-      <HomePage />
-    </main>
+    <MobileMenuProvider>
+      <main>
+        {/* <Header /> */}
+        {/* <Navbar /> */}
+        <HomePage />
+      </main>
+    </MobileMenuProvider>
   );
 }

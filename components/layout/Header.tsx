@@ -1,3 +1,5 @@
+"use client";
+
 import { HeaderProps } from "@/types/navigation";
 import { useMobileMenu } from "../context/MobileMenuContext";
 import Link from "next/link";
