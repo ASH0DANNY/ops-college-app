@@ -398,34 +398,16 @@ const HomePage = () => {
         {/* BHU Documentary */}
         <section className="py-8 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-black rounded-lg overflow-hidden shadow-lg">
-              <div className="relative h-64 md:h-96">
-                <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent z-10"></div>
-                <Image
-                  src="/bhu-documentary-thumbnail.jpg"
-                  alt="BHU Documentary 2019-2020"
-                  layout="fill"
-                  objectFit="cover"
-                />
-                <div className="absolute inset-0 z-20 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center cursor-pointer hover:bg-red-700 transition-colors">
-                    <div className="w-0 h-0 border-l-8 border-l-white border-t-4 border-t-transparent border-b-4 border-b-transparent ml-1"></div>
-                  </div>
-                </div>
-                <div className="absolute bottom-4 left-4 z-20 text-white">
-                  <h3 className="text-xl font-bold">
-                    BHU Documentary 2019-2020
-                  </h3>
-                  <div className="flex gap-4 mt-2 text-sm">
-                    <button className="hover:underline">Watch Later</button>
-                    <button className="hover:underline">Share</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <iframe
+              className="w-full rounded-lg shadow-lg h-[400px]"
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+
             <div className="text-center mt-4">
               <a href="#" className="text-blue-600 hover:text-blue-800">
-                Tweets by VC office BHU
+                Tweets by VC office ABC
               </a>
             </div>
           </div>
