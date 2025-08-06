@@ -399,7 +399,7 @@ const HomePage = () => {
         <section className="py-8 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4">
             <iframe
-              className="w-full rounded-lg shadow-lg h-[400px]"
+              className="w-full rounded-lg shadow-lg h-[450px]"
               src="https://www.youtube.com/embed/VIDEO_ID"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
