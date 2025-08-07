@@ -73,7 +73,7 @@ const Header = ({ className = "" }: HeaderProps) => {
                 <div key={item.id} className="relative group">
                   <Link
                     href={item.path || "#"}
-                    className="inline-flex items-center px-4 py-3 text-sm font-semibold text-black hover:text-blue-200 hover:bg-blue-800 rounded-lg transition duration-150 ease-in-out"
+                    className="inline-flex items-center px-3 py-3 text-sm font-semibold text-black hover:text-blue-200 hover:bg-blue-800 rounded-lg transition duration-150 ease-in-out"
                   >
                     {item.title}
                     {item.submenu && (
